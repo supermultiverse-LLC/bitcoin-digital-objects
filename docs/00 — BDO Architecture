@@ -1,0 +1,182 @@
+# 00 — BDO Architecture
+
+**Status:** Draft v1.0
+
+---
+
+# Overview
+
+Bitcoin Digital Objects (BDOs) are built as an open architecture composed of independent layers.
+
+Each layer has a single responsibility.
+
+Each higher layer depends on the layers below it without replacing them.
+
+This separation allows the ecosystem to evolve while preserving interoperability.
+
+---
+
+# Architecture
+
+```
+                Applications
+        (wallets, games, marketplaces,
+         communities, ticketing, etc.)
+                       ▲
+                       │
+                 Experiences
+                       ▲
+                       │
+                Capabilities
+                       ▲
+                       │
+                Verification
+                       ▲
+                       │
+                  Ownership
+                       ▲
+                       │
+                   Identity
+                       ▲
+                       │
+         Bitcoin Digital Objects
+                       ▲
+                       │
+                  STAS-01
+      (Open Interoperability Specification)
+                       ▲
+                       │
+               Taproot Assets
+                       ▲
+                       │
+                   Bitcoin
+```
+
+---
+
+# Layer Responsibilities
+
+| Layer | Responsibility |
+|--------|----------------|
+| Bitcoin | Security, consensus and final settlement |
+| Taproot Assets | Bitcoin-native digital asset primitives |
+| STAS-01 | Open interoperability specification |
+| Bitcoin Digital Objects | Open ownership category |
+| Identity | Defines what an object is |
+| Ownership | Defines who controls the object |
+| Verification | Allows independent validation |
+| Capabilities | Describe what applications may do with the object |
+| Experiences | User-facing interactions built by applications |
+| Applications | Wallets, games, communities, marketplaces and services |
+
+---
+
+# Conceptual Flow
+
+The architecture follows a simple progression.
+
+Bitcoin provides security.
+
+Taproot Assets provide Bitcoin-native digital asset primitives.
+
+STAS-01 defines how compatible implementations exchange and interpret those assets.
+
+Bitcoin Digital Objects establish a shared conceptual ownership category.
+
+Identity gives every object continuity.
+
+Ownership assigns control.
+
+Verification replaces trust.
+
+Capabilities describe possible interactions.
+
+Applications transform those capabilities into user experiences.
+
+---
+
+# Separation of Responsibilities
+
+Each layer intentionally solves a different problem.
+
+Bitcoin does not define digital ownership semantics.
+
+Taproot Assets do not define interoperability.
+
+STAS-01 does not define applications.
+
+Bitcoin Digital Objects do not define user interfaces.
+
+Applications do not define ownership.
+
+Keeping responsibilities separated allows every layer to evolve independently.
+
+---
+
+# Open Ecosystem
+
+The BDO architecture is intentionally open.
+
+Multiple specifications may represent Bitcoin Digital Objects.
+
+Multiple implementations may support those specifications.
+
+Multiple applications may interpret the same object.
+
+Interoperability emerges through shared standards rather than centralized platforms.
+
+---
+
+# Design Philosophy
+
+The architecture follows a few fundamental principles.
+
+- Build on Bitcoin.
+- Keep standards open.
+- Separate concepts from implementations.
+- Separate ownership from experiences.
+- Replace trust with verification.
+- Maximize interoperability.
+- Allow applications to innovate freely.
+
+---
+
+# Relationship Between Repositories
+
+The Bitcoin Digital Objects ecosystem is intentionally divided into independent repositories.
+
+```
+bitcoin-digital-objects
+        │
+        ├── Defines the conceptual architecture
+        │
+        ▼
+stas-standard
+        │
+        ├── Defines the interoperability specification
+        │
+        ▼
+Reference Implementations
+        │
+        ├── Supermultiverse
+        ├── BTCPay Plugin
+        └── Future compatible implementations
+```
+
+Each repository has a different purpose.
+
+This repository defines concepts.
+
+STAS-01 defines technical interoperability.
+
+Reference implementations demonstrate how the architecture can be applied.
+
+---
+
+# Guiding Principle
+
+> Bitcoin secures ownership.
+
+> Open standards enable interoperability.
+
+> Applications create experiences.

@@ -10,166 +10,253 @@ Bitcoin Digital Objects (BDOs) are built as an open architecture composed of ind
 
 Each layer has a single responsibility.
 
-Each higher layer depends on the layers below it without replacing them.
+Each higher layer builds upon the layers below it without replacing them.
 
-This separation allows the ecosystem to evolve while preserving interoperability.
+This separation allows the ecosystem to evolve while preserving interoperability, portability and long-term ownership.
 
 ---
 
-# Architecture
+# Architectural Stack
 
 ```
-                Applications
-        (wallets, games, marketplaces,
-         communities, ticketing, etc.)
-                       ▲
-                       │
-                 Experiences
-                       ▲
-                       │
-                Capabilities
-                       ▲
-                       │
-                Verification
-                       ▲
-                       │
-                  Ownership
-                       ▲
-                       │
-                   Identity
-                       ▲
-                       │
-         Bitcoin Digital Objects
-                       ▲
-                       │
-                  STAS-01
-      (Open Interoperability Specification)
-                       ▲
-                       │
-               Taproot Assets
-                       ▲
-                       │
-                   Bitcoin
+APPLICATIONS
+──────────────────────────────────────────────
+
+Wallets
+Games
+Communities
+Marketplaces
+Ticketing
+Commerce
+Identity
+AI
+Future Applications
+
+──────────────────────────────────────────────
+
+OWNERSHIP MODEL
+
+Bitcoin Digital Objects
+Identity
+Ownership
+Verification
+Capabilities
+Lifecycle
+
+──────────────────────────────────────────────
+
+OPEN STANDARD
+
+STAS-01
+
+──────────────────────────────────────────────
+
+FOUNDATION
+
+Taproot Assets
+Bitcoin
 ```
 
 ---
 
 # Layer Responsibilities
 
-| Layer | Responsibility |
-|--------|----------------|
-| Bitcoin | Security, consensus and final settlement |
-| Taproot Assets | Bitcoin-native digital asset primitives |
-| STAS-01 | Open interoperability specification |
-| Bitcoin Digital Objects | Open ownership category |
-| Identity | Defines what an object is |
-| Ownership | Defines who controls the object |
-| Verification | Allows independent validation |
-| Capabilities | Describe what applications may do with the object |
-| Experiences | User-facing interactions built by applications |
-| Applications | Wallets, games, communities, marketplaces and services |
+## Foundation
+
+The Foundation provides the technical infrastructure upon which the entire ecosystem is built.
+
+### Bitcoin
+
+Provides:
+
+- security
+- consensus
+- decentralization
+- immutable settlement
+
+Bitcoin is the ultimate source of ownership.
 
 ---
 
-# Conceptual Flow
+### Taproot Assets
 
-The architecture follows a simple progression.
+Provides Bitcoin-native digital asset primitives.
 
-Bitcoin provides security.
-
-Taproot Assets provide Bitcoin-native digital asset primitives.
-
-STAS-01 defines how compatible implementations exchange and interpret those assets.
-
-Bitcoin Digital Objects establish a shared conceptual ownership category.
-
-Identity gives every object continuity.
-
-Ownership assigns control.
-
-Verification replaces trust.
-
-Capabilities describe possible interactions.
-
-Applications transform those capabilities into user experiences.
+Taproot Assets enable digital assets to inherit Bitcoin's security while remaining independent from application logic.
 
 ---
 
-# Separation of Responsibilities
+## Open Standard
 
-Each layer intentionally solves a different problem.
+### STAS-01
 
-Bitcoin does not define digital ownership semantics.
+STAS-01 defines how compatible implementations represent and exchange Bitcoin Digital Objects.
 
-Taproot Assets do not define interoperability.
+It is responsible for:
 
-STAS-01 does not define applications.
+- interoperability
+- serialization
+- verification mechanisms
+- compatibility between implementations
 
-Bitcoin Digital Objects do not define user interfaces.
+STAS-01 does **not** define what a Bitcoin Digital Object is.
 
-Applications do not define ownership.
-
-Keeping responsibilities separated allows every layer to evolve independently.
+It defines how compatible systems communicate.
 
 ---
 
-# Open Ecosystem
+## Conceptual Model
 
-The BDO architecture is intentionally open.
+The conceptual model defines the shared language of the ecosystem.
 
-Multiple specifications may represent Bitcoin Digital Objects.
+It explains the meaning of Bitcoin Digital Objects independently from any implementation.
 
-Multiple implementations may support those specifications.
+The conceptual model consists of six documents.
 
-Multiple applications may interpret the same object.
+### AP-001
 
-Interoperability emerges through shared standards rather than centralized platforms.
+What is a Bitcoin Digital Object?
+
+Defines the category itself.
+
+---
+
+### AP-002
+
+Identity Model
+
+Defines what makes a Bitcoin Digital Object remain the same object throughout its lifetime.
+
+---
+
+### AP-003
+
+Ownership Model
+
+Defines who controls a Bitcoin Digital Object.
+
+---
+
+### AP-004
+
+Capability Model
+
+Defines how applications interpret and interact with Bitcoin Digital Objects.
+
+---
+
+### AP-005
+
+Verification Model
+
+Defines how ownership, identity and authenticity are independently verified.
+
+---
+
+### AP-006
+
+Lifecycle Model
+
+Defines how Bitcoin Digital Objects evolve while preserving continuity.
+
+---
+
+## Applications
+
+Applications create user experiences.
+
+Applications may include:
+
+- wallets
+- games
+- communities
+- ticketing systems
+- marketplaces
+- commerce platforms
+- enterprise software
+- AI systems
+
+Applications interpret Bitcoin Digital Objects.
+
+They do not define them.
 
 ---
 
 # Design Philosophy
 
-The architecture follows a few fundamental principles.
+The architecture follows several core principles.
 
 - Build on Bitcoin.
 - Keep standards open.
 - Separate concepts from implementations.
 - Separate ownership from experiences.
-- Replace trust with verification.
-- Maximize interoperability.
-- Allow applications to innovate freely.
+- Verification replaces trust.
+- Applications compete through user experience.
+- Ownership outlives applications.
 
 ---
 
-# Relationship Between Repositories
+# Repository Architecture
 
-The Bitcoin Digital Objects ecosystem is intentionally divided into independent repositories.
+The ecosystem is intentionally divided into independent repositories.
 
 ```
 bitcoin-digital-objects
         │
-        ├── Defines the conceptual architecture
+        ├── Conceptual architecture
         │
         ▼
 stas-standard
         │
-        ├── Defines the interoperability specification
+        ├── Open interoperability specification
         │
         ▼
 Reference Implementations
         │
         ├── Supermultiverse
-        ├── BTCPay Plugin
+        ├── BTCPay Server Plugin
         └── Future compatible implementations
 ```
 
-Each repository has a different purpose.
+Each repository has a different responsibility.
 
-This repository defines concepts.
+### bitcoin-digital-objects
 
-STAS-01 defines technical interoperability.
+Defines the conceptual architecture.
 
-Reference implementations demonstrate how the architecture can be applied.
+No implementation details.
+
+---
+
+### stas-standard
+
+Defines the open interoperability specification.
+
+No application-specific behavior.
+
+---
+
+### Reference Implementations
+
+Demonstrate how Bitcoin Digital Objects can be implemented in real-world applications.
+
+Implementations may vary while remaining fully compatible with the open standard.
+
+---
+
+# Evolution
+
+Each layer may evolve independently.
+
+Applications may evolve without changing the conceptual model.
+
+The Ownership model may evolve without modifying Bitcoin.
+
+New interoperability specifications may emerge.
+
+New implementations may appear.
+
+The architecture is designed for long-term evolution.
 
 ---
 
@@ -178,5 +265,7 @@ Reference implementations demonstrate how the architecture can be applied.
 > Bitcoin secures ownership.
 
 > Open standards enable interoperability.
+
+> Bitcoin Digital Objects define ownership.
 
 > Applications create experiences.

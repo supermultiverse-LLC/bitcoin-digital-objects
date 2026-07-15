@@ -6,50 +6,46 @@
 
 # Bitcoin Digital Objects (BDOs)
 
-**An open architecture for digital ownership on Bitcoin.**
+**An open category for Bitcoin-native digital ownership.**
+
+Bitcoin Digital Objects (BDOs) define a simple idea:
+
+> Digital things should be ownable.
+
+A Bitcoin Digital Object (BDO) is a digital object whose ownership is secured by Bitcoin and can be independently verified, transferred and interpreted across compatible applications.
+
+BDOs are an open category.
+
+No single company owns them.
+
+No single platform controls them.
 
 ---
 
-## What is a Bitcoin Digital Object?
+# Vision
 
-A **Bitcoin Digital Object (BDO)** is a digital object whose ownership is secured by Bitcoin.
+The internet made it possible to create digital things.
 
-Unlike traditional digital files, a BDO can be:
+Bitcoin made it possible to own digital things.
 
-- Truly owned
-- Independently verified
-- Carried across compatible applications
+Bitcoin Digital Objects make that ownership useful.
 
-A BDO is not tied to any single platform.
+The goal is simple:
 
-Applications may disappear.
-
-Ownership remains.
+Build an open ecosystem where digital ownership is portable, verifiable and interoperable.
 
 ---
 
-## Why BDOs?
+# Architecture
 
-The internet allowed us to create and share digital things.
-
-Bitcoin allows us to own them.
-
-Bitcoin Digital Objects bridge those two worlds.
-
-They transform digital content into independently owned digital objects.
-
----
-
-## Architecture
-
-The BDO ecosystem is built as a layered architecture.
+The BDO ecosystem is intentionally layered.
 
 ```
 Applications
         ↑
-Bitcoin Digital Objects (BDOs)
+Bitcoin Digital Objects (Category)
         ↑
-STAS-01
+STAS-01 (Open Specification)
         ↑
 Taproot Assets
         ↑
@@ -58,123 +54,76 @@ Bitcoin
 
 Each layer has a different responsibility.
 
-Bitcoin provides security.
-
-Taproot Assets provide digital asset primitives.
-
-STAS-01 defines interoperability.
-
-BDOs define the ownership model.
-
-Applications create user experiences.
+| Layer | Responsibility |
+|-------|----------------|
+| Bitcoin | Security and consensus |
+| Taproot Assets | Bitcoin-native digital asset primitives |
+| STAS-01 | Open interoperability specification |
+| Bitcoin Digital Objects | Shared ownership category |
+| Applications | User experiences |
 
 ---
 
-## Design Principles
+# Design Principles
 
-Every Bitcoin Digital Object should satisfy five fundamental properties.
+Bitcoin Digital Objects follow a few fundamental principles.
 
-### Ownership
-
-Ownership belongs to users.
-
-Not to applications.
-
----
-
-### Verification
-
-Anyone should be able to independently verify authenticity.
-
-Verification should never require trusting a platform.
+- Ownership should outlive applications.
+- Verification should not require trust.
+- Objects should be portable.
+- Standards should be open.
+- Applications should compete through experiences, not lock-in.
 
 ---
 
-### Portability
+# Repository
 
-Ownership travels with the user.
+This repository contains the conceptual architecture of Bitcoin Digital Objects.
 
-Applications support BDOs.
+It is intentionally independent from any particular implementation or company.
 
-They do not contain them.
+## Documentation
 
----
-
-### Persistence
-
-Digital ownership should outlive individual services.
-
-A BDO should survive the disappearance of any application.
+- BDO Architecture
+- BDO Identity Model
+- BDO Ownership Model
+- BDO Capability Model
+- BDO Trust Model
 
 ---
 
-### Composability
+# Relationship with STAS-01
 
-The same BDO may unlock different experiences across different applications without changing its identity.
+BDOs are **not** a protocol.
 
----
+BDOs are an open category.
 
-## Repository Structure
+STAS-01 is the first open specification designed to represent Bitcoin Digital Objects on Bitcoin-native infrastructure.
 
-```
-docs/
-
-    01-bdo-architecture.md
-
-    02-bdo-identity-model.md
-
-    03-bdo-ownership-model.md
-
-    04-bdo-capability-model.md
-
-    05-bdo-trust-model.md
-
-    ...
-```
+Future specifications may also define compatible BDO implementations.
 
 ---
 
-## Relationship with STAS-01
+# Ecosystem
 
-**Bitcoin Digital Objects (BDOs)** define the conceptual model for digital ownership.
+The Bitcoin Digital Objects ecosystem currently includes:
 
-**STAS-01** defines the open interoperability specification that allows BDOs to work across compatible implementations.
-
----
-
-## Reference Implementations
-
-This repository does not define a single implementation.
-
-Compatible implementations are encouraged.
-
-Current reference implementations include:
-
-- STAS-01
-- Supermultiverse
-- BTCPay Server Plugin
+- STAS-01 — Open interoperability specification
+- Supermultiverse — Reference implementation
+- BTCPay Server Plugin — Reference integration
 
 ---
 
-## Status
+# Contributing
 
-Bitcoin Digital Objects are an open architecture under active development.
+Bitcoin Digital Objects are an open initiative.
 
-Community discussion and compatible implementations are encouraged.
+Contributions, discussions and alternative implementations are welcome.
 
 ---
 
-## Guiding Principle
+# Guiding Principle
 
 > Applications may disappear.
-
+>
 > Ownership should not.
-
----
-
-## Vision
-
-> The internet let us share digital things.
-
-> Bitcoin lets us own them.
-

@@ -1,6 +1,10 @@
 # RFC-0001 — Alignment of STAS-01 with the Bitcoin Digital Objects Architecture
 
-Status: Draft
+Status: Superseded by RFC-0002
+
+---
+
+> **Note:** This RFC has been superseded by [RFC-0002 — Align STAS-01 with the Bitcoin Digital Objects Architecture](./rfc-0002-stas-alignment.md), which formally establishes the same alignment with complete document metadata. RFC-0001 is retained for historical context.
 
 ---
 

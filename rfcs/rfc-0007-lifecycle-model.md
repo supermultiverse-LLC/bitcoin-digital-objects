@@ -1,6 +1,6 @@
 # RFC-0007 — Define the Bitcoin Digital Object Lifecycle Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

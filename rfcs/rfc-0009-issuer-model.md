@@ -1,6 +1,6 @@
 # RFC-0009 — Define the Bitcoin Digital Object Issuer Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

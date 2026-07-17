@@ -1,6 +1,6 @@
 # RFC-0010 — Define the Bitcoin Digital Object Verification Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

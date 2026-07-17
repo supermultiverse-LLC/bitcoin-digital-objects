@@ -1,6 +1,6 @@
 # RFC-0008 — Define the Bitcoin Digital Object Metadata Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

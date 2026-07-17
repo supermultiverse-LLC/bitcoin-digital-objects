@@ -1,6 +1,6 @@
 # RFC-0006 — Define the Bitcoin Digital Object Ownership Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

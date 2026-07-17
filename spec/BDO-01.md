@@ -1,8 +1,8 @@
 # BDO-01 — Bitcoin Digital Objects
 
-Status: Draft
+Status: Released
 Category: Open Standard
-Version: 1.0 (draft)
+Version: 1.0
 
 ## Abstract
 

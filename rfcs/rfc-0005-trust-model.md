@@ -1,6 +1,6 @@
 # RFC-0005 — Define the Bitcoin Digital Object Trust Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

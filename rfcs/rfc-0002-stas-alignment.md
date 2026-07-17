@@ -1,6 +1,6 @@
 # RFC-0002 — Align STAS-01 with the Bitcoin Digital Objects Architecture
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

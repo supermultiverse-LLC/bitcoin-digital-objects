@@ -1,6 +1,6 @@
 # RFC-0004 — Define the Bitcoin Digital Object Capability Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

@@ -1,6 +1,6 @@
 # RFC-0003 — Define the Bitcoin Digital Object Identity Model
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 

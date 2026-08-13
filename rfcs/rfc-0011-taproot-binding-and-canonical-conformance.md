@@ -1,10 +1,12 @@
 # RFC-0011 — Taproot Binding and Canonical Conformance
 
-Status: Draft
+Status: Accepted
 
 Author: Supermultiverse
 
 Created: 2026-07-25
+
+Ratified: 2026-08-13
 
 ---
 
@@ -184,13 +186,34 @@ profile. It does not define:
 
 ---
 
-# Open Decisions
+# Decisions — Ratified 2026-08-13
 
-- **A1–A5** above — confirm the bindings.
-- **Ownership** of the `bdo-taproot-binding` profile in the STAS standard, and its
-  dependency ordering against STAS-01 v1.
-- **Ambition** — the priority (not the direction) of the migration follows from how
-  open the category is intended to be in practice.
+All alignment decisions are **ratified**:
+
+- **A1 — Identity.** The Taproot Asset genesis identifier is the Identity. Ratified.
+- **A2 — Commitment.** The meta payload carries a commitment to the Encoded Form, not
+  necessarily the full Form. Ratified.
+- **A3 — Integrity.** A digest over the STAS Serialized Form, plus the Taproot proof as
+  the on-chain anchor scope. Ratified.
+- **A4 — Authenticity.** Issuer/creator signatures are attestation Extensions that
+  reference the Integrity digest and are never the Integrity mechanism. Ratified.
+- **A5 — Content per Type.** Ratified with the following initial definitions:
+  - **collectible** — the media is the Content;
+  - **ticket** — the admission entitlement (event, ticket type, validity) is the
+    Content; media is Metadata;
+  - **membership** — the membership grant (access scope, validity) is the Content;
+  - **redeemable** — the redeemable promise (what may be redeemed, and how many
+    times) is the Content.
+
+**Governing premise (recorded):** the binding follows the Taproot Assets protocol
+exactly as specified by its maintainers and never diverges from it; the normative
+statement of this premise is the *Taproot Assets Protocol Compatibility* section of
+`urn:stas:profile:bdo-taproot-binding`.
+
+**Profile ownership:** `urn:stas:profile:bdo-taproot-binding` is owned by the STAS
+Working Group and published in the STAS standard (merged 2026-08-13, Draft 0.1.0).
+
+**Migration priority** is a roadmap matter and does not gate these decisions.
 
 ---
 

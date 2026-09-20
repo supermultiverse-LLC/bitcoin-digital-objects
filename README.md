@@ -8,6 +8,8 @@
 
 **An open category for digital ownership secured by Bitcoin.**
 
+Website: **[bitcoindigitalobjects.com](https://bitcoindigitalobjects.com)** — the category explained: [What is a BDO](https://bitcoindigitalobjects.com/what-is-a-bdo) · [Own, Verify, Carry](https://bitcoindigitalobjects.com/principles) · [STAS-01](https://bitcoindigitalobjects.com/stas-01) · [FAQ](https://bitcoindigitalobjects.com/faq) · [Implementations](https://bitcoindigitalobjects.com/implementations)
+
 ---
 
 ## What is a Bitcoin Digital Object?

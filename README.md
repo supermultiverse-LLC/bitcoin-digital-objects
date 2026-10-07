@@ -84,12 +84,10 @@ The BDO ecosystem is intentionally layered.
         ┌────────────────┼────────────────┐
         │                │                │
  Applications        STAS-01      Future Specifications
-        │                │
-        └────────────────┘
-                 │
-          Taproot Assets
-                 │
-              Bitcoin
+                         │
+                  Taproot Assets
+                         │
+                      Bitcoin
 ```
 
 Each layer has a distinct responsibility.
@@ -97,7 +95,7 @@ Each layer has a distinct responsibility.
 | Layer | Responsibility |
 |--------|----------------|
 | Bitcoin | Security and consensus |
-| Taproot Assets | Bitcoin-native digital asset primitives |
+| Taproot Assets | Bitcoin-native asset primitives (the protocol STAS-01 binds to) |
 | STAS-01 | Open interoperability specification |
 | Bitcoin Digital Objects | Open ownership category |
 | Applications | User experiences |

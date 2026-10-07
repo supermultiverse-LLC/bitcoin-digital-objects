@@ -95,8 +95,7 @@ Each layer has a distinct responsibility.
 | Layer | Responsibility |
 |--------|----------------|
 | Bitcoin | Security and consensus |
-| Taproot Assets | Bitcoin-native asset primitives (the protocol STAS-01 binds to) |
-| STAS-01 | Open interoperability specification |
+| STAS-01 | Open interoperability specification, bound to the Taproot Assets protocol |
 | Bitcoin Digital Objects | Open ownership category |
 | Applications | User experiences |
 
